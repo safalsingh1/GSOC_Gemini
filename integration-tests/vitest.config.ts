@@ -10,6 +10,7 @@ export default defineConfig({
   test: {
     testTimeout: 300000, // 5 minutes
     globalSetup: './globalSetup.ts',
+    setupFiles: ['./test-setup.ts'],
     reporters: ['default'],
     include: ['**/*.test.ts'],
     retry: 2,

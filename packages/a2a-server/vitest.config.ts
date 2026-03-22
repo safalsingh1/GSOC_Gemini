@@ -12,6 +12,7 @@ export default defineConfig({
     include: ['**/*.{test,spec}.?(c|m)[jt]s?(x)'],
     exclude: ['**/node_modules/**', '**/dist/**'],
     globals: true,
+    setupFiles: ['./test-setup.ts'],
     reporters: ['default', 'junit'],
     silent: true,
     outputFile: {

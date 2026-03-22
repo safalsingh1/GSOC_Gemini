@@ -1,15 +1,9 @@
 /**
  * @license
- * Copyright 2025 Google LLC
+ * Copyright 2026 Google LLC
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { vi } from 'vitest';
 import { setupConsoleMocks } from '@google/gemini-cli-test-utils';
 
 setupConsoleMocks();
-
-vi.mock('fs', () => ({
-  ...vi.importActual('fs'),
-  appendFileSync: vi.fn(),
-}));

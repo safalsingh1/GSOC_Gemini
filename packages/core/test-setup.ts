@@ -12,6 +12,9 @@ if (process.env.NO_COLOR !== undefined) {
 import { setSimulate429 } from './src/utils/testUtils.js';
 import { vi, afterEach } from 'vitest';
 import { coreEvents } from './src/utils/events.js';
+import { setupConsoleMocks } from '@google/gemini-cli-test-utils';
+
+setupConsoleMocks();
 
 // Increase max listeners to avoid warnings in large test suites
 coreEvents.setMaxListeners(100);
