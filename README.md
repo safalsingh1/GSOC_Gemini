@@ -34,3 +34,4 @@ Local execution of `npm run test:ci` and E2E preflight processes now successfull
 - `README.md`: Overview of the contribution logic.
 - `fix_23328_test_noise.patch`: The raw git patch file demonstrating the exact diff applied to the Gemini CLI monorepo.
 - `loggerMock.ts`: The centralized testing utility built to intercept console state tracking.
+- `code_samples/`: Example configurations modified across different monorepo workspaces (like `cli`, `core`, and `integration-tests`) which highlight an understanding of how distinct Vite execution boundaries require standardized interceptors.
